@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
-import NavBar from "./NavBar";
+import Navbar from "./NavBar";
 
 const LayoutWrapper = (props: { children: ReactNode }) => {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <main>{props.children}</main>
     </>
   );
