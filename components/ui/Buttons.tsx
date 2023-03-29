@@ -5,7 +5,10 @@ import { navbarFontSize } from "@/utils/fonts";
 
 const Buttons = (props: { buttonType: string; onClick?: () => void }) => {
   const { buttonType, onClick } = props;
-  const hover = "secondaryAccent.light";
+  const hover = useColorModeValue(
+    "secondaryAccent.light",
+    "primaryAccent.dark"
+  );
   const border = useColorModeValue("black", "white");
 
   if (buttonType === "contact-me") {
